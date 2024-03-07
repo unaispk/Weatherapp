@@ -1,0 +1,14 @@
+.city {
+    /* background-color: #6890b98c; */
+    background-color: #929aa1b5
+    ; 
+    width: 650px;
+    height: 250px;
+    border-radius: 8px;
+    margin: 50px 0px 0px 0px;
+    padding: 40px 0px 60px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

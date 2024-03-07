@@ -1,0 +1,36 @@
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa; /* Light gray background color */
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: solid rgb(131, 129, 129) 0.5px;
+  }
+  
+  .search-bar-button {
+    background-color: #007bff; /* Bootstrap's primary color */
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    outline: #007bff;
+  }
+  
+  /* Optional: Style the search icon inside the button */
+  .search-bar-button i {
+    font-size: 18px;
+  }
+  
