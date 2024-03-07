@@ -1,26 +1,22 @@
-/* *{
-    padding: 0;
-    margin: 0;
-} */
-.cityAndWeatherContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.main {
-    /* background-image: url('./assets/wallpaper1.jpg');
-    background-size: cover;
-    height: 97vh;
-    background-repeat: no-repeat;
-    background-position: center ; */
-  }
+.cityAndWeatherContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .ErrorMessage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20vh;
-    color: rgb(129, 7, 7);
-    font-family: Georgia, Times New Roman, serif;  
-  }
+.ErrorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  /* color: rgb(129, 7, 7); */
+  color: rgb(246, 27, 27);
+  /* font-size: large; */
+  font-size: larger;
+  font-family: Georgia, Times New Roman, serif;
+}

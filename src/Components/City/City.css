@@ -1,8 +1,7 @@
 .city {
     /* background-color: #6890b98c; */
-    background-color: #929aa1b5
-    ; 
-    width: 650px;
+    background-color: #929aa1b5;
+    width: 620px;
     height: 250px;
     border-radius: 8px;
     margin: 50px 0px 0px 0px;
@@ -11,4 +10,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .city {
+        background-color: #929aa1b5;
+        width: 40vw;
+        height: 250px;
+        border-radius: 8px;
+        margin: 50px 20px 2rem;
+        /* Adjusted margin for vertical centering, auto for horizontal centering */
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .city {
+        background-color: #929aa1b5;
+        width: 40vw;
+        height: 250px;
+        border-radius: 8px;
+        margin: 50px -4rem 2rem;
+        /* Adjusted margin for vertical centering, auto for horizontal centering */
+        padding: 20px 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* For mobile phones: */
+    .city {
+        background-color: #929aa1b5;
+        width: 80vw;
+        height: 250px;
+        border-radius: 8px;
+        margin: 50px auto 0;
+        /* Adjusted margin for vertical centering, auto for horizontal centering */
+        padding: 20px 10px;
+    }
 }
