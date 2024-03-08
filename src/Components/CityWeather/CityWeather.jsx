@@ -36,11 +36,21 @@ function CityWeather({ weatherData }) {
     // console.log(currentDayWeatherDetails);
 
     const weatherIcon = currentDayWeatherDetails.weather[0].icon
-    // console.log(currentDayWeatherDetails.pressure)
+    console.log(currentDayWeatherDetails)
     const pressure = currentDayWeatherDetails.pressure
     const humidity = currentDayWeatherDetails.humidity
     const gust = currentDayWeatherDetails.gust
 
+    const dayTemperature = currentDayWeatherDetails.feels_like.day
+    const eveTemperature = currentDayWeatherDetails.feels_like.eve
+    const mornTemperature = currentDayWeatherDetails.feels_like.morn
+    const nightTemperature = currentDayWeatherDetails.feels_like.night
+    // console.log(dayTemperature, eveTemperature, mornTemperature, nightTemperature);
+    let avgTemperature = [dayTemperature, eveTemperature, mornTemperature, nightTemperature];
+    const arrLength = avgTemperature.length;
+    avgTemperature = avgTemperature.reduce((temp, temp1)=> (temp+temp1))
+    // console.log(avgTemperature/(arrLength));
+    avgTemperature = (avgTemperature/(arrLength)).toFixed(2)
     return (
         
         <div className='cityweather'>
@@ -53,7 +63,7 @@ function CityWeather({ weatherData }) {
                     <p><span><FontAwesomeIcon icon={faSun} style={{ color: 'orange', transform: 'rotate(45deg)' }} /></span>{`${SunRiseOrSet(sunSet)} P.M`}</p>
                 </div>
             </div>
-            <h1>29.76'C</h1>
+            <h1> {avgTemperature} &deg; C</h1>
          
             <p>{`${currentDayWeatherMain}, ${currentDayWeatherDescription}`}</p>
             <p> <span ><FontAwesomeIcon icon={faTemperatureThreeQuarters} style={{  color: '#000'}}/></span> {pressure} hPa  

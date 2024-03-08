@@ -25,7 +25,7 @@ const CarouselSlide = ({ weatherData }) => {
                                     <img src={`https://openweathermap.org/img/w/${day.weather[0].icon}.png`} alt="" />
                                 </div>
                                 <div className="flex  flex-col text-center ">
-                                    <p>{`${day.temp.min} - ${day.temp.max}`}</p>
+                                    <p>{day.temp.min} &deg;C - {day.temp.max} &deg;C</p>
                                     <h6>{day.weather[0].main}</h6>
                                     <p>{day.weather[0].description}</p>
                                 </div>
